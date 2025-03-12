@@ -30,7 +30,7 @@ fun ColorScreen(colorModel: ColorModel, colorType: ColorModel.ColorType) { // Us
         horizontalAlignment = Alignment.CenterHorizontally
     ) {
         Text(
-            text = "Math Total: $mathtotal",
+            text = "$mathtotal",
             fontSize = 24.sp,
             fontWeight = FontWeight.Bold,
             color = MaterialTheme.colorScheme.primary

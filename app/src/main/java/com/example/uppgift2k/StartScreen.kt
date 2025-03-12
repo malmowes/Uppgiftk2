@@ -35,8 +35,8 @@ fun StartScreen(
         Button(
             onClick = { colorModel.add(1) },
             colors = ButtonDefaults.buttonColors(
-                containerColor = Color.Red,
-                contentColor = Color.White
+                containerColor = Color.Gray,
+                contentColor = Color.Black
             ),
             shape = RectangleShape,
             modifier = Modifier
