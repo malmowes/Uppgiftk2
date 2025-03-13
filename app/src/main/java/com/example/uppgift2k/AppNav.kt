@@ -19,11 +19,11 @@ fun AppNav(navController: NavHostController, colorModel: ColorModel) {
         }
         composable("colorScreen/{color}") { backStackEntry ->
             val colorType = backStackEntry.arguments?.getString("color")?.let {
-                runCatching { ColorModel.ColorType.valueOf(it) }.getOrNull() // Ensure safe conversion
+                runCatching { ColorModel.ColorType.valueOf(it) }.getOrNull()
             }
 
             if (colorType != null) {
-                ColorScreen(colorModel = colorModel, colorType = colorType) // Use the correct property name
+                ColorScreen(colorModel = colorModel, colorType = colorType)
             }
         }
     }

@@ -14,8 +14,8 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 
 @Composable
-fun ColorScreen(colorModel: ColorModel, colorType: ColorModel.ColorType) { // Use the correct parameter type
-    val color = when (colorType) {  // Correctly using colorType
+fun ColorScreen(colorModel: ColorModel, colorType: ColorModel.ColorType) {
+    val color = when (colorType) {
         ColorModel.ColorType.RED -> Color.Red
         ColorModel.ColorType.GREEN -> Color.Green
     }
