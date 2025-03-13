@@ -24,16 +24,15 @@ fun ColorScreen(colorModel: ColorModel, colorType: ColorModel.ColorType) { // Us
     val mathtotal by colorModel.mathtotal.collectAsState()
 
     Column(
-        modifier = Modifier
-            .fillMaxSize()
-            .padding(16.dp),
+        modifier = Modifier.fillMaxSize()
+        .background(Color(0xFFADD8E6)),
+        verticalArrangement = Arrangement.Center,
         horizontalAlignment = Alignment.CenterHorizontally
     ) {
         Text(
             text = "$mathtotal",
-            fontSize = 24.sp,
-            fontWeight = FontWeight.Bold,
-            color = MaterialTheme.colorScheme.primary
+            fontSize = 70.sp,
+
         )
 
         Box(
