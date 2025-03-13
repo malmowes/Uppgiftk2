@@ -27,7 +27,7 @@ fun StartScreen(
 
     Column(
         modifier = Modifier.fillMaxSize()
-            .background(Color(0xFFADD8E6)),
+            .background(Color(0xFF87CEEB)),
         verticalArrangement = Arrangement.Center,
         horizontalAlignment = Alignment.CenterHorizontally
     ) {
